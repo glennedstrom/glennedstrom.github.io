@@ -22,7 +22,7 @@ function typeWriter(e, command, speed, output, index) {
     setTimeout(typeWriter, speed, e, command, speed, output, index);
   }
   else {//after  the command is typed, print the output, and call back the original function to loop
-    e.innerHTML += "<br>" + output + "<br>"
+    e.innerHTML += "<br>" + output + "<br><br>"
     cmdList = command.split(' ')
     if (cmdList[0] === 'clear'){
       $("#term-text")[0].innerHTML = ''//remove everything
@@ -51,19 +51,19 @@ function command(command, index){
 //list of commands, and their outputs to display on the mock terminal
 commandloop = [
   [
-    "whoami","glenn<br>"
+    "whoami","glenn"
   ],
   [
-    "ls","languages.txt  portfolio.txt  tools.txt<br>"
+    "ls","languages.csv  portfolio.txt  tools.txt"
   ],
   [
-    "cat languages.txt","Python Bash C++ Java JavaScript HTML CSS Lua<br>"
+    "cat portfolio.txt","Mathdocs glennedstrom.github.io Hardware"
   ],
   [
-    "cat portfolio.txt","Mathdocs glennedstrom.github.io Hardware<br>"
+    "cat languages.csv | awk 'BEGIN{FS=\",\"; OFS=\" \"} {$1=$1; print}'", "Python Bash C++ Java JavaScript HTML CSS Lua"
   ],
   [
-    "cat tools.txt","Bash Vim jQuery Flask Regex<br>"
+    "cat tools.txt","Bash Vim jQuery Flask Regex"
   ],
   [
     "clear", ""
