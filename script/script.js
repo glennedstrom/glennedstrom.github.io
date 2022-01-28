@@ -25,7 +25,7 @@ function typeWriter(e, command, speed, output, index) {
     e.innerHTML += "<br>" + output + "<br>"
     cmdList = command.split(' ')
     if (cmdList[0] === 'clear'){
-      $("#term")[0].innerHTML = ''//remove everything
+      $("#term-text")[0].innerHTML = ''//remove everything
     }
     e.innerHTML += "<span style='color:#12a10d'>┌──(</span><span style='color:#3a78ff'>glenn㉿DESKTOP-github</span><span style='color:#12a10d'>)-[</span>"+path+"<span style='color:#12a10d'>]</span><span style='color:#12a10d'><br>└─</span><span style='color:#3a78ff'>$</span> "
     index += 1
@@ -41,11 +41,10 @@ function typeWriter(e, command, speed, output, index) {
 
 // linux command and current directory
 function command(command, index){
-    e = document.getElementById('term')
+    e = $("#term-text")[0]
 
     //e.innerHTML += "<span style='color:#12a10d'>┌──(</span><span style='color:#3a78ff'>glenn㉿DESKTOP-github</span><span style='color:#12a10d'>)-[</span>"+path+"<span style='color:#12a10d'>]</span><span style='color:#12a10d'><br>└─</span><span style='color:#3a78ff'>$</span> "
     typeWriter(e, command[0], 125, command[1], index)
-
 }
 
 
@@ -73,7 +72,7 @@ commandloop = [
 
 //recursive function to loop through the commands and print
 function termloop(index=0) {
-    term = document.getElementById('term')
+    term = $("#term-text")[0]
     command(commandloop[index], index)
 }
 
