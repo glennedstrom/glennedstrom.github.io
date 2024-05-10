@@ -77,7 +77,3 @@ function termloop(index=0) {
 }
 
 
-$(function(){
-    $('#age').text("Age: " + Math.floor( (Date.now() - 1033516800000)/31540000000 ));
-    termloop()
-})
