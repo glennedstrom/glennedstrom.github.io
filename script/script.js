@@ -54,16 +54,16 @@ commandloop = [
     "whoami","glenn"
   ],
   [
-    "ls","languages.csv  portfolio.txt  tools.txt"
+    "ls","languages.txt  portfolio.txt  tools.txt"
   ],
   [
-    "cat portfolio.txt","Mathdocs glennedstrom.github.io Hardware"
+    "cat portfolio.txt","Self-Driving Car, Mathdocs, glennedstrom.github.io,  Y-86 Processor"
   ],
   [
-    "cat languages.csv | awk 'BEGIN{FS=\",\"; OFS=\" \"} {$1=$1; print}'", "Python Bash C++ Java JavaScript HTML CSS Lua"
+    "cat languages.txt", "Python, C/C++, Bash, x86 Assembly, RegEx, Lua, Java, SQL, JavaScript, HTML/CSS"
   ],
   [
-    "cat tools.txt","Bash Vim jQuery Flask Regex"
+    "cat tools.txt","Vim, Git, Linux, Wireshark, Anaconda, Google Cloud Platform, VS Code"
   ],
   [
     "clear", ""
@@ -76,4 +76,4 @@ function termloop(index=0) {
     command(commandloop[index], index)
 }
 
-
+termloop();
