@@ -15,7 +15,7 @@ var i = 0
 var path = "~/resume"
 
 //text typing simulation
-function typeWriter(e, command, speed, output, index) {
+/*function typeWriter(e, command, speed, output, index) {
   if (i < command.length) {
     e.innerHTML += command.charAt(i);
     i++;
@@ -76,4 +76,52 @@ function termloop(index=0) {
     command(commandloop[index], index)
 }
 
-termloop();
+termloop();*/
+
+  document.addEventListener('DOMContentLoaded', function() {
+      const navbar = document.querySelector('.navbar');
+      const navLinks = document.querySelectorAll('.nav-link');
+      const sections = document.querySelectorAll('section, div.container');
+      
+      // Handle scroll events for navbar appearance
+      function handleScroll() {
+          if (window.scrollY > 50) {
+              navbar.classList.add('nav-scrolled');
+              navbar.classList.remove('nav-transparent');
+          } else {
+              navbar.classList.remove('nav-scrolled');
+              navbar.classList.add('nav-transparent');
+          }
+      }
+      
+      // Handle active link updates
+      function updateActiveLink() {
+          let currentSection = '';
+          
+          sections.forEach(section => {
+              const sectionTop = section.offsetTop;
+              const sectionHeight = section.clientHeight;
+              if (window.scrollY >= (sectionTop - 150)) {
+                  currentSection = section.getAttribute('id');
+              }
+          });
+          
+          navLinks.forEach(link => {
+              link.classList.remove('active');
+              if (link.getAttribute('href').slice(1) === currentSection) {
+                  link.classList.add('active');
+              }
+          });
+      }
+      
+      // Add event listeners
+      window.addEventListener('scroll', () => {
+          handleScroll();
+          updateActiveLink();
+      });
+      
+      // Initial call to set correct state
+      handleScroll();
+      updateActiveLink();
+  });
+

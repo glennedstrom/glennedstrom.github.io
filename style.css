@@ -1,10 +1,3 @@
-/* navbar */
-a.anchor {
-    display: block;
-    position: relative;
-    top: -250px;
-    visibility: hidden;
-}
 /* hero image */
 .bgimage {
     height:100vh;
@@ -66,7 +59,170 @@ a.anchor {
     border: 1px solid #008000;
 }
 
-/* display background color black on navbar scroll */
-.navbarScroll.navbarDark {
-    background-color: black;
+/* Base navbar styles */
+.navbar {
+    transition: all 0.3s ease;
 }
+
+/* Transparent state (at top) */
+.nav-transparent {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.nav-transparent .navbar-brand,
+.nav-transparent .nav-link {
+    color: white !important;
+}
+
+.nav-transparent .navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+}
+
+/* Scrolled state */
+.nav-scrolled {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-scrolled .navbar-brand,
+.nav-scrolled .nav-link {
+    color: #2d3436 !important;
+}
+
+.nav-scrolled .navbar-toggler-icon {
+    filter: none;
+}
+
+/* Hover effects */
+.navbar-nav .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-1px);
+}
+
+.nav-scrolled .navbar-nav .nav-link:hover {
+    background-color: rgba(45, 52, 54, 0.1);
+}
+
+.navbar-brand:hover {
+    color: #0984e3 !important;
+}
+
+/* Active link styling */
+.navbar-nav .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-scrolled .navbar-nav .nav-link.active {
+    background-color: rgba(45, 52, 54, 0.1);
+    color: #0984e3 !important;
+}
+
+/* Mobile menu styling */
+@media (max-width: 768px) {
+    .navbar-collapse {
+        background-color: rgba(255, 255, 255, 0.98);
+        padding: 1rem;
+        border-radius: 10px;
+        margin-top: 0.5rem;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    
+    .navbar-nav {
+        gap: 0.25rem;
+    }
+
+    /* Ensure text is visible in mobile menu regardless of scroll position */
+    .nav-transparent .navbar-collapse .nav-link {
+        color: #2d3436 !important;
+    }
+}
+
+
+
+/* portfolio section */
+.project-card {
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.project-card.expanded {
+    position: relative;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.project-card .expand-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.project-card .expand-btn:hover {
+    background: rgba(255, 255, 255, 1);
+}
+
+.project-card .card-content {
+    display: none;
+}
+
+.project-card .card-content.active {
+    display: block;
+}
+
+.project-card .brief-content {
+    display: block;
+}
+
+.project-card .brief-content.hidden {
+    display: none;
+}
+
+    .image-container {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+
+.main-image {
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.additional-images {
+    display: flex;
+    gap: 1rem;
+    opacity: 0;
+    width: 0;
+    transition: all 0.3s ease;
+}
+
+.expanded .main-image {
+    width: calc(33.333% - 0.67rem);
+}
+
+.expanded .additional-images {
+    opacity: 1;
+    width: calc(66.667% - 0.33rem);
+}
+
+.additional-image {
+    width: calc(50% - 0.5rem);
+    height: 100%;
+}
+
+.video-container {
+    transition: all 0.3s ease;
+}
+

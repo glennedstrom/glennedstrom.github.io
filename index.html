@@ -1,275 +1,442 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Glenn Edstrom - Machine Learning Engineer and AI Trainer specializing in autonomous vehicles and computer vision">
-    <meta name="keywords" content="Machine Learning, AI, Self-Driving Cars, Python, PyTorch, Computer Vision">
-    <meta property="og:title" content="Glenn Edstrom - Machine Learning Engineer">
-    <meta property="og:description" content="Portfolio showcasing AI and machine learning projects">
-    <meta property="og:image" content="images/id.jpg">
-    
-    <!-- CSS file -->
-    <link rel="stylesheet" href="style.css">
-    <!-- bootstrap CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Glenn Edstrom - Machine Learning Engineer and AI Trainer specializing in autonomous vehicles and computer vision">
+        <meta name="keywords" content="Machine Learning, AI, Self-Driving Cars, Python, PyTorch, Computer Vision">
+        <meta property="og:title" content="Glenn Edstrom - Machine Learning Engineer">
+        <meta property="og:description" content="Portfolio showcasing AI and machine learning projects">
+        <meta property="og:image" content="images/id.jpg">
 
-    <title>Glenn Edstrom</title>
-</head>
+        <!-- CSS file -->
+        <link rel="stylesheet" href="style.css">
+        <!-- bootstrap CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- font awesome -->
+        <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-<body>
-    <nav class="navbar navbar-expand-md navbarScroll fixed-top">
-        <div class="container">
-            <a class="navbar-brand site_title" href="#">Glenn</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experience">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#education">Education</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#learning">Learning</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#awards">Awards</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+        <title>Glenn Edstrom</title>
+    </head>
 
-    <!-- main banner -->
-    <a class=anchor id="home"></a>
-    <section class="bgimage">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-3"></div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 hero-text">
-                    <h2 class="hero_title">Hello, I'm Glenn Edstrom</h2>
-                    <p class="hero_desc">Machine Learning Engineer & AI Trainer</p>
+    <body>
+        <nav class="navbar navbar-expand-md fixed-top nav-transparent" style="
+            transition: all 0.3s ease;
+            padding: 0.5rem 0;
+            ">
+            <div class="container">
+                <a class="navbar-brand" href="#" style="
+                    font-size: 1.25rem;
+                    font-weight: 600;
+                    color: #2d3436;
+                    transition: color 0.3s ease;
+                    ">Glenn</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    style="border: none; padding: 0.5rem;">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto" style="gap: 0.5rem;">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home" style="
+                                color: #2d3436;
+                                font-weight: 500;
+                                padding: 0.35rem 0.75rem;
+                                border-radius: 5px;
+                                transition: all 0.3s ease;
+                                ">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about" style="
+                                color: #2d3436;
+                                font-weight: 500;
+                                padding: 0.5rem 1rem;
+                                border-radius: 5px;
+                                transition: all 0.3s ease;
+                                ">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experience" style="
+                                color: #2d3436;
+                                font-weight: 500;
+                                padding: 0.5rem 1rem;
+                                border-radius: 5px;
+                                transition: all 0.3s ease;
+                                ">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#education" style="
+                                color: #2d3436;
+                                font-weight: 500;
+                                padding: 0.5rem 1rem;
+                                border-radius: 5px;
+                                transition: all 0.3s ease;
+                                ">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills" style="
+                                color: #2d3436;
+                                font-weight: 500;
+                                padding: 0.5rem 1rem;
+                                border-radius: 5px;
+                                transition: all 0.3s ease;
+                                ">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio" style="
+                                color: #2d3436;
+                                font-weight: 500;
+                                padding: 0.5rem 1rem;
+                                border-radius: 5px;
+                                transition: all 0.3s ease;
+                                ">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#awards" style="
+                                color: #2d3436;
+                                font-weight: 500;
+                                padding: 0.5rem 1rem;
+                                border-radius: 5px;
+                                transition: all 0.3s ease;
+                                ">Awards</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact" style="
+                                color: #2d3436;
+                                font-weight: 500;
+                                padding: 0.5rem 1rem;
+                                border-radius: 5px;
+                                transition: all 0.3s ease;
+                                ">Contact</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </section>
+        </nav>
 
-    <!-- terminal
-    <div class="container overflow-scroll" id=term>
-        <span id=term-text>
-            <span style='color:#12a10d'>┌──(</span><span style='color:#3a78ff'>glenn㉿DESKTOP-github</span><span style='color:#12a10d'>)-[</span>~/portfolio<span style='color:#12a10d'>]</span><span style='color:#12a10d'><br>└─</span><span style='color:#3a78ff'>$</span> cat skills.txt<br>
-            Languages: Python, C/C++, Bash, x86 Assembly, RegEx, Java, SQL, JavaScript, HTML/CSS<br>
-            Frameworks: PyTorch, OpenCV, React, Flask, Bootstrap, jQuery<br>
-            Tools: Linux, Git, Vim, Wireshark, Google Cloud Platform<br>
-            <span style='color:#12a10d'>┌──(</span><span style='color:#3a78ff'>glenn㉿DESKTOP-github</span><span style='color:#12a10d'>)-[</span>~/portfolio<span style='color:#12a10d'>]</span><span style='color:#12a10d'><br>└─</span><span style='color:#3a78ff'>$</span> 
-        </span><span>▌</span>
-    </div>
-    -->
-
-    <!-- about -->
-    <a class=anchor id="about"></a>
-    <div class="container mt-4 pt-4">
-        <h1 class="text-center">About Me</h1>
-        <div class="row mt-4">
-            <div class="col-lg-4">
-                <img src="images/id.jpg" class="imageAboutPage" alt="Professional headshot">
-            </div>
-            <div class="col-lg-8">
-                <p>I am a Machine Learning Engineer and AI Trainer with experience in developing autonomous vehicle systems and helping train large language models to code. I've worked with PyTorch and CARLA to create self-driving car prototypes and have received recognition for outstanding project performance.</p>
-                <div class="row mt-3">
-                    <h3>History</h3>
-                    <p>My journey in programming began with Scratch well over a decade ago and quickly advanced to creating 3D Roblox games in Lua. Through middle school and high school, I expanded my skills to include JavaScript, HTML, CSS, SQL, Python, and Java through my classes.</p>
-                    <p>In college, I've taken courses in Machine Learning, Artificial Intelligence, Computer Organization, and various other computer science subjects. I've worked on projects ranging from designing Y86-64 processors to developing self-driving cars using imitation learning.</p>
-                    <p>Currently, I work as an AI Trainer, helping to improve large language models' understanding and generation of coding tasks. I'm passionate about machine learning, computer vision, and creating innovative solutions to complex problems.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- experience section -->
-    <a class=anchor id="experience"></a>
-    <div class="container mt-4 pt-4">
-        <h1 class="text-center">Experience</h1>
-        <div class="row mt-4">
-            <div class="col-lg-6">
-                <div class="card">
-                    <img class="card-img-top" src="images/dataannotations.png" alt="DataAnnotations logo">
-                    <div class="card-body">
-                        <h4 class="card-title">Data Scientist - AI Trainer</h4>
-                        <h6 class="card-subtitle mb-2 text-muted">DataAnnotations | Oct. 2024 - Present</h6>
-                        <p class="card-text">
-                            • Create diverse coding problems and solutions hard enough for a chatbots to fail<br>
-                            • Evaluate the code quality produced by AI models for correctness and performance<br>
-                            • Writing answers to fix the AI's mistakes to create high-quality training data<br>
-                        </p>
+        <!-- main banner -->
+        <a class=anchor id="home"></a>
+        <section class="bgimage">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-3"></div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 hero-text">
+                        <h2 class="hero_title">Hello, I'm Glenn Edstrom</h2>
+                        <p class="hero_desc">Machine Learning Engineer & AI Trainer</p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6">
-                <div class="card">
-                    <img class="card-img-top" src="images/endeavr.png" alt="Endeavr logo">
-                    <div class="card-body">
-                        <h4 class="card-title">Machine Learning Engineer</h4>
-                        <h6 class="card-subtitle mb-2 text-muted">Endeavr | Jan. 2024 - Aug. 2024</h6>
-                        <p class="card-text">
-                            • Developed award-winning self-driving car project with a small team<br>
-                            • Created 2D and 3D prototypes using PyTorch and CARLA<br>
-                            • Implemented conditional imitation learning systems adding turn making abilities
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+        </section>
 
-    <!-- education section-->
-    <a class=anchor id="education"></a>
-    <div class="container mt-4 pt-4">
-        <h1 class="text-center">Education</h1>
-        <div class="row mt-4">
-            <div class="col-lg-12">
-                <div class="card">
-                    <img class="card-img-top w-25 mx-auto" src="images/tamu.png" alt="Texas A&M University logo">
-                    <div class="card-body">
-                        <h4 class="card-title">Texas A&M University</h4>
-                        <p class="card-text text-center">
-                            Bachelor of Science in Computer Science<br>
-                            Business Minor<br>
-                            Major GPA: 3.73
-                        </p>
-                        <h5 class="mt-3">Relevant Coursework</h5>
-                        <p class="card-text">
-                            Machine Learning, Artificial Intelligence, Competitive Programming, Design and Analysis of Algorithms, 
-                            Computer Graphics, Computer Organization, Software Reverse Engineering, Wireless & Mobile Systems
-                        </p>
-                        <h5 class="mt-3">Extracurricular Activities</h5>
-                        <p class="card-text">
-                            • Climbing Team (National Qualifier: 1st)<br>
-                            • Aggie Data Science Club<br>
-                            • Tzu Chi Volunteering
-                        </p>
+        <!-- about -->
+        <a class=anchor id="about"></a>
+        <div class="container mt-4 pt-4">
+            <h1 class="text-center">About Me</h1>
+            <div class="row mt-4">
+                <div class="col-lg-4">
+                    <img src="images/id.jpg" class="imageAboutPage" alt="Professional headshot">
+                </div>
+                <div class="col-lg-8">
+                    <p>I am a Machine Learning Engineer and AI Trainer with experience in developing autonomous vehicle systems and helping train large language models to code. I've worked with PyTorch and CARLA to create self-driving car prototypes and have received recognition for outstanding project performance.</p>
+                    <div class="row mt-3">
+                        <h3>History</h3>
+                        <p>My journey in programming began with Scratch well over a decade ago and quickly advanced to creating 3D Roblox games in Lua. Through middle school and high school, I expanded my skills to include JavaScript, HTML, CSS, SQL, Python, and Java through my classes.</p>
+                        <p>In college, I've taken courses in Machine Learning, Artificial Intelligence, Computer Organization, and various other computer science subjects. I've worked on projects ranging from designing Y86-64 processors to developing self-driving cars using imitation learning.</p>
+                        <p>Currently, I work as an AI Trainer, helping to improve large language models' understanding and generation of coding tasks. I'm passionate about machine learning, computer vision, and creating innovative solutions to complex problems.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- skills section-->
-    <a class=anchor id="skills"></a>
-    <div class="container">
-        <h1 class="text-center">Skills</h1>
-        <div class="row">
-            <div class="col-lg-4 mt-4">
-                <div class="card skillsText">
-                    <div class="card-body">
-                        <i class="fas skillsIcon fa-code"></i>
-                        <h4 class="card-title mt-3">Languages</h4>
-                        <p class="card-text mt-3">Python, C/C++, Bash, Lua, x86 Assembly, RegEx, Java, Haskell, SQL, JavaScript, HTML/CSS</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 mt-4">
-                <div class="card skillsText">
-                    <div class="card-body">
-                        <i class="fas skillsIcon fa-laptop-code"></i>
-                        <h4 class="card-title mt-3">Frameworks & Libraries</h4>
-                        <p class="card-text mt-3">PyTorch, OpenCV, React, Flask, Bootstrap, jQuery, Pandas, NumPy, SymPy, Scapy, Matplotlib</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 mt-4">
-                <div class="card skillsText">
-                    <div class="card-body">
-                        <i class="fas skillsIcon fa-tools"></i>
-                        <h4 class="card-title mt-3">Developer Tools</h4>
-                        <p class="card-text mt-3">Vim, AI/LLMs, Git, Linux, Wireshark, Anaconda, VS Code</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- portfolio section-->
-    <a class=anchor id="portfolio"></a>
-        <div class="container mt-3">
-            <h1 class="text-center">Portfolio</h1>
-                <div>
+        <!-- experience section -->
+        <a class=anchor id="experience"></a>
+        <div class="container mt-4 pt-4">
+            <h1 class="text-center">Experience</h1>
+            <div class="row mt-4">
+                <div class="col-lg-6">
                     <div class="card">
-                    <iframe width=100% height="500" src="https://www.youtube.com/embed/FuLQzgVd45s?si=pUszYPegBb4MK7gk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <img class="card-img-top" src="images/dataannotations.png" alt="DataAnnotations logo">
                         <div class="card-body">
-                            <a class=anchor id="self_driving_car_project"></a>
-                            <h4 class="card-title">Self-Driving Car using Conditional Imitation Learning</h4>
-                                <a class="nav-link" href="#self_driving_cr_award">Award-Winning</a>
-                                <p class="card-text">I worked in a small team of four people with a non-profit Endeavr to create a self-driving car from scratch using conditional imitation learning. <br><br>
-                                    What is Imitation learning? it is a form of machine learning where you train your model to try to imitate a human's behavior. We do this by first having an "Expert Driver" drive the car while we collect data like the inputs (dash cam video frame, speed of your car, and a command like turn left, right, or go straight) and the outputs which is what our expert driver is doing (turning angle, gas, brake). After we collect all of this data, we train our model given each input to try to predict the turning angle, gas, and brake.<br><br>
-
-                                        The main problem with just doing this is that the expert driver only gave it near-perfect data. This means our model does not know what to do if it makes a slight mistake. This is where we need to include DAgger. For this, we just need to let the car drive, then when it messes up, we take over the wheel while collecting data to get it back on track and let it take over. This data will be used to retrain the model so that it will know how to fix its mistakes.<br><br>
-
-                                        The way that we approached this was we initially wanted to make sure that this was possible at all, so we made a simplified 2D version, then when it was done it was able to run for hours without falling off the race track.<br><br>
-
-                                        We eventually moved this over to a 3D version to make our self-driving car work in CARLA which is a driving simulator designed for creating autonomous cars. The car driving in the video is our self-driving car driving around when we were pretty close to done with the project. The final project can drive around like in the video with commanded inputs like (turn left, turn right, or go straight) so that you can use something like Google Maps to give it inputs and it will take you from point A to point B in your car to get you to your destination.
-                                </p>
+                            <h4 class="card-title">Data Scientist - AI Trainer</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">DataAnnotations | Oct. 2024 - Present</h6>
+                            <p class="card-text">
+                                • Create diverse coding problems and solutions hard enough for a chatbots to fail<br>
+                                • Evaluate the code quality produced by AI models for correctness and performance<br>
+                                • Writing answers to fix the AI's mistakes to create high-quality training data<br>
+                            </p>
                         </div>
                     </div>
                 </div>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
+                <div class="col-lg-6">
                     <div class="card">
-                        <img class="card-img-top" src="images/mathdocs.png" alt="Card image" style="width:100%">
+                        <img class="card-img-top" src="images/endeavr.png" alt="Endeavr logo">
+                        <div class="card-body">
+                            <h4 class="card-title">Machine Learning Engineer</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">Endeavr | Jan. 2024 - Aug. 2024</h6>
+                            <p class="card-text">
+                                • Developed award-winning self-driving car project with a small team<br>
+                                • Created 2D and 3D prototypes using PyTorch and CARLA<br>
+                                • Implemented conditional imitation learning systems adding turn making abilities
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- education section-->
+        <a class=anchor id="education"></a>
+        <div class="container mt-4 pt-4">
+            <h1 class="text-center">Education</h1>
+            <div class="row mt-4">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <img class="card-img-top w-25 mx-auto" src="images/tamu.png" alt="Texas A&M University logo">
+                        <div class="card-body">
+                            <h4 class="card-title">Texas A&M University</h4>
+                            <p class="card-text text-center">
+                                Bachelor of Science in Computer Science<br>
+                                Business Minor<br>
+                                May 2025<br>
+                            </p>
+                            <h5 class="mt-3">Relevant Coursework</h5>
+                            <p class="card-text">
+                                Machine Learning, Artificial Intelligence, Competitive Programming, Design and Analysis of Algorithms, 
+                                Computer Graphics, Computer Organization, Software Reverse Engineering, Wireless & Mobile Systems
+                            </p>
+                            <h5 class="mt-3">Extracurricular Activities</h5>
+                            <p class="card-text">
+                                • Climbing Team (National Qualifier: 1st)<br>
+                                • Aggie Data Science Club<br>
+                                • Tzu Chi Volunteering
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- skills section-->
+        <a class=anchor id="skills"></a>
+        <div class="container mt-4 pt-4">
+            <h1 class="text-center">Skills</h1>
+            <div class="row mt-4">
+                <div class="col-lg-4 mt-4">
+                    <div class="card skillsText">
+                        <div class="card-body">
+                            <i class="fas skillsIcon fa-code"></i>
+                            <h4 class="card-title mt-3">Languages</h4>
+                            <p class="card-text mt-3">Python, C/C++, Bash, Lua, x86 Assembly, RegEx, Java, Haskell, SQL, JavaScript, HTML/CSS</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="card skillsText">
+                        <div class="card-body">
+                            <i class="fas skillsIcon fa-laptop-code"></i>
+                            <h4 class="card-title mt-3">Frameworks & Libraries</h4>
+                            <p class="card-text mt-3">PyTorch, OpenCV, React, Flask, Bootstrap, jQuery, Pandas, NumPy, SymPy, Scapy, Matplotlib</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="card skillsText">
+                        <div class="card-body">
+                            <i class="fas skillsIcon fa-tools"></i>
+                            <h4 class="card-title mt-3">Developer Tools</h4>
+                            <p class="card-text mt-3">Vim, AI/LLMs, Git, Linux, Wireshark, Anaconda, VS Code</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- portfolio section-->
+<style>
+.project-card .expand-btn {
+    border: 2px solid rgba(0, 0, 0, 0.5) !important;
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project-card .expand-btn:hover {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    border-color: rgba(0, 0, 0, 0.8) !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.project-card .expand-btn i {
+    color: rgba(0, 0, 0, 0.7);
+}
+</style>
+
+        <a class="anchor" id="portfolio"></a>
+        <div class="container mt-4 pt-4">
+            <h1 class="text-center">Portfolio</h1>
+            <div class="row mt-4" id="projects-container">
+                <!-- Self-Driving Car Project -->
+                <div class="col-lg-12 mt-4 project-card expanded" data-expanded="true" data-type="video">
+                    <div class="card">
+                        <button class="expand-btn">
+                            <i class="fas fa-compress-alt"></i>
+                        </button>
+                        <!-- Brief Content -->
+                        <div class="brief-content hidden">
+                            <div class="video-container" style="height: 200px;">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/FuLQzgVd45s?si=pUszYPegBb4MK7gk" 
+                                    title="YouTube video player" frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">Self-Driving Car Project</h4>
+                                <p class="card-text">Award-winning autonomous vehicle project using conditional imitation learning and computer vision.</p>
+                                <div class="text-center">
+                                    <a class="nav-link" href="#self_driving_cr_award">View Award</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Expanded Content -->
+                        <div class="card-content active">
+                            <div class="video-container" style="height: 500px;">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/FuLQzgVd45s?si=pUszYPegBb4MK7gk" 
+                                    title="YouTube video player" frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="card-body">
+                                <a class="anchor" id="self_driving_car_project"></a>
+                                <h4 class="card-title">Self-Driving Car using Conditional Imitation Learning</h4>
+                                <a class="nav-link" href="#self_driving_cr_award">Award-Winning</a>
+                                <p class="card-text">I worked in a small team of four people with a non-profit Endeavr to create a self-driving car from scratch using conditional imitation learning. <br><br>
+                                    What is Imitation learning? It is a form of machine learning where you train your model to try to imitate a human's behavior. We do this by first having an "Expert Driver" drive the car while we collect data like the inputs (dash cam video frame, speed of your car, and a turn-by-turn navigation instructions like turn left, right, or go straight) and the outputs, which is what our expert driver is doing (turning angle, gas, brake). After we collect all of this data, we train our model given each input to try to predict the turning angle, gas, and brake.<br><br>
+
+                                    The main problem we encountered doing this is that the expert driver only gave it near-perfect data. This means our model does not know what to do if it makes a slight mistake. This is where we need to include DAgger. For this, we need to let the car drive; then, when it messes up, we take over the wheel while collecting data to get it back on track and let it take over. This data will be used to retrain the model to teach it to fix its mistakes.<br><br>
+
+                                    The way that we approached this was we initially wanted to make sure that this was possible at all, so we made a simplified 2D version to test the waters. I found a random 2d racetrack image off Google, and our goal was to get a rectangle car to do laps around the track without falling off. I took a birds-eye view 'screenshot' of the car facing the same direction the car is facing to feed it into the model as the input image to give it context about its surroundings in the same way that we would with cameras on a 3D version. When we finished this initial prototype, it ran for hours without falling off the race track.<br><br>
+
+                                    We eventually moved this model over to a 3D version to make our self-driving car work in CARLA, which is a driving simulator designed for creating autonomous cars. The car driving in the video is our self-driving car driving around when we were almost finished with the project. The final project can drive around like in the video with turn-by-turn navigation instructions (like turn left, turn right, or go straight) so that you can use something like Google Maps to give it inputs, and it will take you from point A to point B in your car to get you to your destination without human intervention.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MathDocs Project -->
+                <div class="col-lg-4 mt-4 project-card" data-expanded="false" data-type="regular">
+                    <div class="card">
+                        <button class="expand-btn">
+                            <i class="fas fa-expand-alt"></i>
+                        </button>
+                        <div class="image-container">
+                            <img class="main-image" src="images/mathdocs.png" alt="MathDocs preview">
+                            <div class="additional-images">
+                                <img class="additional-image" src="images/mathdocs_full_view.png" alt="MathDocs feature 2">
+                                <img class="additional-image" src="images/kinematics.png" alt="MathDocs feature 3">
+                            </div>
+                        </div>
                         <div class="card-body">
                             <h4 class="card-title">MathDocs</h4>
-                            <p class="card-text">This site allows you to work through math problems while showing your work easily, and it will put a red box around your errors so that you know you messed up. This is a work in progress, but it can check any algebraic equations right now.</p>
-                            <div class="text-center">
+                            <p class="card-text">Interactive math notebook with real-time error detection.</p>
+                            <div class="mt-3">
+                                <h5>Technical Details</h5>
+                                <p class="card-text">
+                                    • Built with Flask and Python backend<br>
+                                    • Uses SymPy for mathematical computations<br>
+                                    • Frontend utilizing JavaScript, jQuery, and RegEx<br>
+                                    • Real-time error detection feedback to prevent wasting time working when you already messed up
+                                </p>
+                            </div>
+                            <div class="d-flex justify-content-around">
+                                <a href="https://mathdocs-alpha.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Live Site</a>
                                 <a href="https://github.com/glennedstrom/MathDocs" target="_blank" rel="noopener noreferrer" class="btn btn-success">GitHub</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-4 mt-4">
+                <!-- Y86 Processor Project -->
+                <div class="col-lg-4 mt-4 project-card" data-expanded="false" data-type="image">
                     <div class="card">
-                        <img class="card-img-top" src="images/logisim_y86_processor.png" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Y-86 Processor</h4>
-                            <p class="card-text">I worked with a small team to make a fully functional Y-86 processor. It was able to run perfectly on the algorithms we tested it on like selection sort that I wrote in Y-86</p>
-                            <div class="text-center">
+                        <button class="expand-btn">
+                            <i class="fas fa-expand-alt"></i>
+                        </button>
+                        <!-- Brief Content -->
+                        <div class="brief-content">
+                            <div class="image-container" style="height: 200px;">
+                                <img class="main-image w-100 h-100" style="object-fit: cover;" src="images/logisim_y86_processor.png" alt="Y86 Processor preview">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">Y-86 Processor</h4>
+                                <p class="card-text">A fully functional Y-86 processor implementation on logisim.</p>
+                            </div>
+                        </div>
+                        <!-- Expanded Content -->
+                        <div class="card-content">
+                            <div class="image-container" style="height: 500px;">
+                                <img class="w-100 h-100" style="object-fit: contain;" src="images/logisim_y86_processor.png" alt="Y86 Processor full view">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">Y-86 Processor</h4>
+                                <p class="card-text">A fully functional Y-86 processor implementation on logisim.</p>
+                                <div class="mt-3">
+                                    <h5>Technical Details</h5>
+                                    <p class="card-text">
+                                        I worked with a small team to make a fully functional Y-86 processor. It was able to run perfectly on several algorithms we tested it on like selection sort that I wrote in Y-86 assembly. The processor includes:
+                                        <br><br>
+                                        • Implementation of the Y86 instruction set<br>
+                                        • Full integration with Logisim's simulation environment
+                                        • Tested on multiple algorithms written in Y-86 by hand
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/website.png" alt="Card image" style="width:100%">
+                <style>
+
+                    .project-card[data-type="image"].expanded .card-content {
+                        display: block;
+                    }
+
+                    .project-card[data-type="image"].expanded .brief-content {
+                        display: none;
+                    }
+                </style>
+
+                <!-- Website Project -->
+                <div class="col-lg-4 mt-4 project-card" data-expanded="false" data-type="regular">
+                    <div class="card">
+                        <button class="expand-btn">
+                            <i class="fas fa-expand-alt"></i>
+                        </button>
+                        <div class="image-container">
+                            <img class="main-image" src="images/website.png" alt="Website preview">
+                            <div class="additional-images">
+                                <img class="additional-image" src="images/website.png" alt="Website feature 2">
+                                <img class="additional-image" src="images/website.png" alt="Website feature 3">
+                            </div>
+                        </div>
                         <div class="card-body">
                             <h4 class="card-title">This Site</h4>
-                            <p class="card-text">You can find all of the code for this website on the repository linked below</p>
+                            <p class="card-text">This Personal portfolio website hosted on github pages.</p>
                             <div class="text-center">
                                 <a href="https://github.com/glennedstrom/glennedstrom.github.io" target="_blank" rel="noopener noreferrer" class="btn btn-success">GitHub</a>
                             </div>
@@ -279,39 +446,70 @@
             </div>
         </div>
 
-    <!-- currently learning section -->
-    <a class=anchor id="learning"></a>
-    <div class="container mt-4 pt-4">
-        <h1 class="text-center">Currently Learning</h1>
-        <div class="card mt-4">
-            <div class="card-body">
-                <p class="card-text">
-                    I'm currently focusing on advancing my knowledge in:
-                    <ul>
-                        <li>DeepSeek R1 and other recent advancements</li>
-                        <li>Large Language Model training and fine-tuning</li>
-                        <li>Reinforcement learning</li>
-                        <li>Generative adversarial networks</li>
-                    </ul>
-                </p>
-            </div>
-        </div>
-    </div>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const projectCards = document.querySelectorAll('.project-card');
 
-    <!-- awards section-->
-    <a class=anchor id="awards"></a>
-        <div class="container mt-3">
+            projectCards.forEach(card => {
+                const expandBtn = card.querySelector('.expand-btn');
+                const briefContent = card.querySelector('.brief-content');
+                const cardContent = card.querySelector('.card-content');
+                const projectType = card.getAttribute('data-type');
+
+                expandBtn.addEventListener('click', () => {
+                    const isExpanded = card.getAttribute('data-expanded') === 'true';
+
+                    if (projectType === 'video') {
+                        // Handle video-type projects (self-driving car)
+                        if (isExpanded) {
+                            card.classList.remove('expanded');
+                            card.classList.remove('col-lg-12');
+                            card.classList.add('col-lg-4');
+                            briefContent.classList.remove('hidden');
+                            cardContent.classList.remove('active');
+                            expandBtn.innerHTML = '<i class="fas fa-expand-alt"></i>';
+                        } else {
+                            card.classList.add('expanded');
+                            card.classList.remove('col-lg-4');
+                            card.classList.add('col-lg-12');
+                            briefContent.classList.add('hidden');
+                            cardContent.classList.add('active');
+                            expandBtn.innerHTML = '<i class="fas fa-compress-alt"></i>';
+                        }
+                    } else {
+                        // Handle regular projects with image rows
+                        if (isExpanded) {
+                            card.classList.remove('expanded');
+                            card.classList.remove('col-lg-12');
+                            card.classList.add('col-lg-4');
+                            expandBtn.innerHTML = '<i class="fas fa-expand-alt"></i>';
+                        } else {
+                            card.classList.add('expanded');
+                            card.classList.remove('col-lg-4');
+                            card.classList.add('col-lg-12');
+                            expandBtn.innerHTML = '<i class="fas fa-compress-alt"></i>';
+                        }
+                    }
+
+                    card.setAttribute('data-expanded', !isExpanded);
+                });
+            });
+        });
+        </script>
+        <!-- awards section-->
+        <a class=anchor id="awards"></a>
+        <div class="container mt-4 pt-4">
             <h1 class="text-center">Awards</h1>
-            <div class="row">
+            <div class="row mt4">
                 <div class="col-lg-6 mt-4">
                     <div class="card portfolioContent">
                         <a class=anchor id="self_driving_cr_award"></a>
                         <img class="card-img-top" src="images/endeavr_best_project_award.png" alt="Card image" style="width:100%">
                         <div class="card-body">
                             <h4 class="card-title">Best Project Award</h4>
-                                    <p class="card-text">Issued by Endeavr · April 2024<br>
-                                        Related to: <a class="nav-link" href="#self_driving_car_project">Self-Driving Car Project</a>
-                                    </p>
+                            <p class="card-text">Issued by Endeavr · April 2024<br>
+                                Related to: <a class="nav-link" href="#self_driving_car_project">Self-Driving Car Project</a>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -338,17 +536,17 @@
             </div>
         </div>
 
-    <!-- contact section-->
-    <a class=anchor id="contact"></a>
-    <div class="container mt-3 contactContent">
-        <h1 class="text-center">Contact Me</h1>
-        <div style="text-align: center; font-size:70px">
-            <a href="https://www.linkedin.com/in/glenn-edstrom/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/glennedstrom" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="mailto:edstrom.glenn@gmail.com"><i class="fas fa-envelope"></i></a>
+        <!-- contact section-->
+        <a class=anchor id="contact"></a>
+        <div class="container mt-4 pt-4 contactContent">
+            <h1 class="text-center">Contact Me</h1>
+            <div style="text-align: center; font-size:70px">
+                <a href="mailto:edstrom.glenn@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/glenn-edstrom/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/glennedstrom" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
         </div>
-    </div>
 
-    <script src="script/script.js"></script>
-</body>
+        <script src="script/script.js"></script>
+    </body>
 </html>
