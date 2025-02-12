@@ -223,9 +223,63 @@
                 </div>
             </div>
         </div>
-
         <!-- skills section-->
-        <a class=anchor id="skills"></a>
+        <style>
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .col-lg-4 {
+                display: flex;
+            }
+
+            .card.skillsText {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .skillsText .card-body {
+                padding: 20px;
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .card-text {
+                flex: 1;
+            }
+
+            .skill-item {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+            }
+
+            .skill-rating {
+                margin-right: 15px;
+                min-width: 100px;
+            }
+
+            .skill-rating i {
+                margin-right: 3px;
+                color: #0d6efd;
+            }
+
+            .skill-name {
+                flex-grow: 1;
+            }
+
+            .skillsIcon {
+                font-size: 36px;
+                text-align: center;
+                width: 100%;
+            }
+        </style>
+
+        <a class="anchor" id="skills"></a>
         <div class="container mt-4 pt-4">
             <h1 class="text-center">Skills</h1>
             <div class="row mt-4">
@@ -234,7 +288,118 @@
                         <div class="card-body">
                             <i class="fas skillsIcon fa-code"></i>
                             <h4 class="card-title mt-3">Languages</h4>
-                            <p class="card-text mt-3">Python, C/C++, Bash, Lua, x86 Assembly, RegEx, Java, Haskell, SQL, JavaScript, HTML/CSS</p>
+                            <div class="card-text mt-3">
+                                <div class="skill-item">
+                                    <div class="skill-rating">
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                    </div>
+                                    <div class="skill-name">Python</div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-rating">
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                    </div>
+                                    <div class="skill-name">C++</div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-rating">
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                    </div>
+                                    <div class="skill-name">Lua</div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-rating">
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="far fa-circle"></i>
+                                    </div>
+                                    <div class="skill-name">JavaScript</div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-rating">
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="far fa-circle"></i>
+                                        <i class="far fa-circle"></i>
+                                    </div>
+                                    <div class="skill-name">RegEx</div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-rating">
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="far fa-circle"></i>
+                                        <i class="far fa-circle"></i>
+                                    </div>
+                                    <div class="skill-name">Java</div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-rating">
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="far fa-circle"></i>
+                                        <i class="far fa-circle"></i>
+                                    </div>
+                                    <div class="skill-name">HTML/CSS</div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-rating">
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="far fa-circle"></i>
+                                        <i class="far fa-circle"></i>
+                                        <i class="far fa-circle"></i>
+                                    </div>
+                                    <div class="skill-name">x86 Assembly</div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-rating">
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="far fa-circle"></i>
+                                        <i class="far fa-circle"></i>
+                                        <i class="far fa-circle"></i>
+                                    </div>
+                                    <div class="skill-name">SQL</div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-rating">
+                                        <i class="fas fa-circle"></i>
+                                        <i class="far fa-circle"></i>
+                                        <i class="far fa-circle"></i>
+                                        <i class="far fa-circle"></i>
+                                        <i class="far fa-circle"></i>
+                                    </div>
+                                    <div class="skill-name">Haskell</div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-rating">
+                                        <i class="fas fa-circle"></i>
+                                        <i class="far fa-circle"></i>
+                                        <i class="far fa-circle"></i>
+                                        <i class="far fa-circle"></i>
+                                        <i class="far fa-circle"></i>
+                                    </div>
+                                    <div class="skill-name">PDDL</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -243,7 +408,88 @@
                         <div class="card-body">
                             <i class="fas skillsIcon fa-laptop-code"></i>
                             <h4 class="card-title mt-3">Frameworks & Libraries</h4>
-                            <p class="card-text mt-3">PyTorch, OpenCV, React, Flask, Bootstrap, jQuery, Pandas, NumPy, SymPy, Scapy, Matplotlib</p>
+                            <div class="card-text mt-3">
+                                <div class="skill-item">
+                                    <div class="skill-rating">
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="far fa-circle"></i>
+                                    </div>
+                                    <div class="skill-name">NumPy</div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-rating">
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="far fa-circle"></i>
+                                    </div>
+                                    <div class="skill-name">Flask</div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-rating">
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="far fa-circle"></i>
+                                    </div>
+                                    <div class="skill-name">Matplotlib</div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-rating">
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="far fa-circle"></i>
+                                        <i class="far fa-circle"></i>
+                                    </div>
+                                    <div class="skill-name">PyTorch</div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-rating">
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="far fa-circle"></i>
+                                        <i class="far fa-circle"></i>
+                                    </div>
+                                    <div class="skill-name">Bootstrap</div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-rating">
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="far fa-circle"></i>
+                                        <i class="far fa-circle"></i>
+                                        <i class="far fa-circle"></i>
+                                    </div>
+                                    <div class="skill-name">OpenCV</div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-rating">
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="far fa-circle"></i>
+                                        <i class="far fa-circle"></i>
+                                        <i class="far fa-circle"></i>
+                                    </div>
+                                    <div class="skill-name">React</div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-rating">
+                                        <i class="fas fa-circle"></i>
+                                        <i class="far fa-circle"></i>
+                                        <i class="far fa-circle"></i>
+                                        <i class="far fa-circle"></i>
+                                        <i class="far fa-circle"></i>
+                                    </div>
+                                    <div class="skill-name">Scapy</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -252,7 +498,89 @@
                         <div class="card-body">
                             <i class="fas skillsIcon fa-tools"></i>
                             <h4 class="card-title mt-3">Developer Tools</h4>
-                            <p class="card-text mt-3">Vim, AI/LLMs, Git, Linux, Wireshark, Anaconda, VS Code</p>
+                            <div class="card-text mt-3">
+
+                                <div class="skill-item">
+                                    <div class="skill-rating">
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                    </div>
+                                    <div class="skill-name">Neovim</div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-rating">
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                    </div>
+                                    <div class="skill-name">Bash Terminal</div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-rating">
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                    </div>
+                                    <div class="skill-name">AI/LLMs</div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-rating">
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="far fa-circle"></i>
+                                    </div>
+                                    <div class="skill-name">Git</div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-rating">
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="far fa-circle"></i>
+                                        <i class="far fa-circle"></i>
+                                    </div>
+                                    <div class="skill-name">VS Code</div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-rating">
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="far fa-circle"></i>
+                                        <i class="far fa-circle"></i>
+                                    </div>
+                                    <div class="skill-name">Virtualenv</div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-rating">
+                                        <i class="fas fa-circle"></i>
+                                        <i class="fas fa-circle"></i>
+                                        <i class="far fa-circle"></i>
+                                        <i class="far fa-circle"></i>
+                                        <i class="far fa-circle"></i>
+                                    </div>
+                                    <div class="skill-name">VirtualBox</div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-rating">
+                                        <i class="fas fa-circle"></i>
+                                        <i class="far fa-circle"></i>
+                                        <i class="far fa-circle"></i>
+                                        <i class="far fa-circle"></i>
+                                        <i class="far fa-circle"></i>
+                                    </div>
+                                    <div class="skill-name">Wireshark</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -261,31 +589,31 @@
 
 
         <!-- portfolio section-->
-<style>
-.project-card .expand-btn {
-    border: 2px solid rgba(0, 0, 0, 0.5) !important;
-    background-color: rgba(255, 255, 255, 0.8) !important;
-    border-radius: 50%;
-    width: 32px;
-    height: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+        <style>
+            .project-card .expand-btn {
+                border: 2px solid rgba(0, 0, 0, 0.5) !important;
+                background-color: rgba(255, 255, 255, 0.8) !important;
+                border-radius: 50%;
+                width: 32px;
+                height: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                transition: all 0.2s ease;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
 
-.project-card .expand-btn:hover {
-    background-color: rgba(255, 255, 255, 0.95) !important;
-    border-color: rgba(0, 0, 0, 0.8) !important;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-}
+            .project-card .expand-btn:hover {
+                background-color: rgba(255, 255, 255, 0.95) !important;
+                border-color: rgba(0, 0, 0, 0.8) !important;
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+            }
 
-.project-card .expand-btn i {
-    color: rgba(0, 0, 0, 0.7);
-}
-</style>
+            .project-card .expand-btn i {
+                color: rgba(0, 0, 0, 0.7);
+            }
+        </style>
 
         <a class="anchor" id="portfolio"></a>
         <div class="container mt-4 pt-4">
@@ -402,7 +730,7 @@
                                         I worked with a small team to make a fully functional Y-86 processor. It was able to run perfectly on several algorithms we tested it on like selection sort that I wrote in Y-86 assembly. The processor includes:
                                         <br><br>
                                         • Implementation of the Y86 instruction set<br>
-                                        • Full integration with Logisim's simulation environment
+                                        • Full integration with Logisim's simulation environment<br>
                                         • Tested on multiple algorithms written in Y-86 by hand
                                     </p>
                                 </div>
@@ -421,25 +749,41 @@
                         display: none;
                     }
                 </style>
-
                 <!-- Website Project -->
-                <div class="col-lg-4 mt-4 project-card" data-expanded="false" data-type="regular">
+                <div class="col-lg-4 mt-4 project-card" data-expanded="false" data-type="image">
                     <div class="card">
                         <button class="expand-btn">
                             <i class="fas fa-expand-alt"></i>
                         </button>
-                        <div class="image-container">
-                            <img class="main-image" src="images/website.png" alt="Website preview">
-                            <div class="additional-images">
-                                <img class="additional-image" src="images/website.png" alt="Website feature 2">
-                                <img class="additional-image" src="images/website.png" alt="Website feature 3">
+                        <!-- Brief Content -->
+                        <div class="brief-content">
+                            <div class="image-container" style="height: 200px;">
+                                <img class="main-image w-100 h-100" style="object-fit: cover;" src="images/website.png" alt="Website preview">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">This Site</h4>
+                                <p class="card-text">This Personal portfolio website hosted on github pages.</p>
+                                <div class="text-center">
+                                    <a href="https://github.com/glennedstrom/glennedstrom.github.io" target="_blank" rel="noopener noreferrer" class="btn btn-success">GitHub</a>
+                                </div>
                             </div>
                         </div>
-                        <div class="card-body">
-                            <h4 class="card-title">This Site</h4>
-                            <p class="card-text">This Personal portfolio website hosted on github pages.</p>
-                            <div class="text-center">
-                                <a href="https://github.com/glennedstrom/glennedstrom.github.io" target="_blank" rel="noopener noreferrer" class="btn btn-success">GitHub</a>
+                        <!-- Expanded Content -->
+                        <div class="card-content">
+                            <div class="image-container" style="height: 500px;">
+                                <img class="w-100 h-100" style="object-fit: contain;" src="images/website.png" alt="Website full view">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">This Site</h4>
+                                <p class="card-text">This Personal portfolio website hosted on github pages.</p>
+                                <div class="mt-3">
+                                    <h5></h5>
+                                    <p class="card-text">
+                                    </p>
+                                </div>
+                                <div class="text-center mt-3">
+                                    <a href="https://github.com/glennedstrom/glennedstrom.github.io" target="_blank" rel="noopener noreferrer" class="btn btn-success">GitHub</a>
+                                </div>
                             </div>
                         </div>
                     </div>
